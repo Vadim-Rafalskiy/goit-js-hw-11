@@ -9,6 +9,10 @@
   justify-content: center;
   /* border-bottom: 1px solid tomato; */
   background-color: cornflowerblue;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .search-form > input {
@@ -45,6 +49,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
 }
 
 .photo-card {
