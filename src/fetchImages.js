@@ -11,7 +11,7 @@ function params(searchQuery, nextPage) {
       orientation: 'horizontal',
       safesearch: 'true',
       per_page: '40',
-      page: `${nextPage}`, //*---------*
+      page: `${nextPage}`,
     },
   };
 }
@@ -23,7 +23,6 @@ export async function fetchImages(searchQuery, nextPage) {
       params(searchQuery, nextPage)
     );
     const data = await response.data;
-
     return data;
   } catch (err) {
     console.log(err.message);
